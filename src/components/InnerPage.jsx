@@ -13,7 +13,7 @@ export default function InnerPage({ title, eyebrow, children }) {
         <div className="container">
           {children ?? (
             <div className="placeholder" role="note">
-              <p>Contenido de la sección “{title}” próximamente.</p>
+              <p>Rellenar.</p>
             </div>
           )}
         </div>

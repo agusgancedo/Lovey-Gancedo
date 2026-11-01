@@ -14,7 +14,7 @@ export const languages = [
   { code: 'pt', label: 'Português', short: 'PT' },
 ]
 
-// Datos tomados del sitio actual (loveygancedo.com.ar). Verificar antes de publicar.
+
 export const contactInfo = {
   address: 'Pte. Luis Sáenz Peña 259',
   phone: '+54-11-4371-0862 / 4372-2240',

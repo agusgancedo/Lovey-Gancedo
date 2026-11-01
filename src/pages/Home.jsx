@@ -15,7 +15,7 @@ export default function Home() {
           <p className="eyebrow eyebrow--light">IP Law Office · Since 1936</p>
           <h1 className="hero__title">Lovey &amp; Gancedo</h1>
           <span className="rule rule--light" aria-hidden="true" />
-          <p className="hero__lead">Marcas y patentes. Espacio reservado para el mensaje de presentación.</p>
+          <p className="hero__lead">Marcas y patentes.</p>
           <div className="hero__actions">
             <Link to="/servicios" className="btn btn--accent">Ver servicios <ArrowRight size={18} aria-hidden="true" /></Link>
             <Link to="/#contacto" className="btn btn--outline-light">Contacto</Link>
