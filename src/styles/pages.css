@@ -1,0 +1,58 @@
+/* ---------- Elementos compartidos ---------- */
+.eyebrow { font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.9rem; }
+.eyebrow--light { color: var(--color-secondary); }
+.rule { display: block; width: 72px; height: 3px; background: var(--color-brass); margin-top: 1.4rem; }
+.rule--light { background: var(--color-brass); }
+
+.placeholder {
+  display: grid; place-items: center; text-align: center; min-height: 160px; padding: 2rem;
+  border: 1px dashed var(--color-brass); background: rgba(248, 240, 226, 0.6); color: var(--color-text-secondary);
+}
+.placeholder p { margin: 0; }
+.placeholder--tall { min-height: 240px; }
+
+/* ---------- Páginas internas ---------- */
+.page-hero { background: var(--color-secondary); border-bottom: 1px solid var(--color-border); padding-block: clamp(3rem, 7vw, 5.5rem); }
+.page-hero__title { font-size: var(--fs-h1); }
+.page-body { padding-block: var(--space-section); }
+.page-body .placeholder { min-height: 360px; }
+
+/* ---------- Home ---------- */
+.hero { position: relative; display: flex; align-items: center; min-height: clamp(520px, 78vh, 760px); color: var(--color-text-on-dark); overflow: hidden; background: var(--color-primary); }
+.hero__image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% center; }
+.hero__overlay { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(22, 22, 22, 0.88) 0%, rgba(22, 22, 22, 0.6) 55%, rgba(22, 22, 22, 0.25) 100%); }
+.hero__content { position: relative; padding-block: 4rem; }
+.hero__title { font-size: clamp(3rem, 7vw + 1rem, 6.5rem); text-transform: uppercase; max-width: 12ch; }
+.hero__lead { max-width: 46ch; margin-top: 1.75rem; font-size: 1.25rem; color: var(--color-secondary); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+
+.section { padding-block: var(--space-section); }
+.section--tan { background: var(--color-secondary); }
+.section--dark { background: var(--color-primary); color: var(--color-text-on-dark); }
+.section__title { font-size: var(--fs-h2); }
+.section__title--light { color: var(--color-text-on-dark); }
+
+.intro { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 3rem; }
+.card {
+  position: relative; display: flex; flex-direction: column; gap: 0.5rem; height: 100%; min-height: 230px; padding: 1.75rem;
+  background: var(--color-surface); border: 1px solid var(--color-border); border-top: 3px solid var(--color-brass);
+  text-decoration: none; transition: transform var(--transition), box-shadow var(--transition), border-top-color var(--transition);
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-top-color: var(--color-accent); }
+.card__num { font-family: var(--font-display); font-size: 2.5rem; line-height: 1; color: var(--color-brass); }
+.card__label { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.15; margin-top: auto; }
+.card__hint { font-size: var(--fs-small); color: var(--color-text-secondary); }
+.card__arrow { position: absolute; top: 1.75rem; right: 1.5rem; color: var(--color-accent); transition: transform var(--transition); }
+.card:hover .card__arrow { transform: translateX(4px); }
+
+.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
+
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.contact__list { display: grid; gap: 1.25rem; }
+.contact__list li { display: flex; gap: 1rem; align-items: flex-start; font-size: 1.125rem; }
+.contact__list svg { flex: none; margin-top: 0.3rem; color: var(--color-brass); }
+.contact__list a { text-decoration: none; border-bottom: 1px solid var(--color-brass); }
+.contact__list a:hover { color: var(--color-secondary); }
+.section--dark :focus-visible { outline-color: var(--color-secondary); }
