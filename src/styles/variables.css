@@ -15,8 +15,8 @@
   --color-text-secondary: #4b4843;
   --color-text-on-dark: #f0e3ce;
 
-  --font-display: 'Abril Fatface', Georgia, 'Times New Roman', serif;
-  --font-body: 'Cantarell', 'Segoe UI', Arial, sans-serif;
+  --font-display: "Abril Fatface", Georgia, "Times New Roman", serif;
+  --font-body: "Cantarell", "Segoe UI", Arial, sans-serif;
 
   --fs-body: 1.0625rem;
   --fs-small: 0.9375rem;
